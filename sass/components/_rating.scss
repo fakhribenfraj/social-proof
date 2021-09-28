@@ -1,0 +1,39 @@
+.rating-container {
+  @include respond(desktop) {
+    width: 50%;
+  }
+}
+.rate {
+  background-color: rgba($color-primary, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 0;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &__stars {
+    margin: 0 auto;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include respond(desktop) {
+    width: 70%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 4rem;
+    &:first-child {
+      transform: translateX(-10%);
+    }
+    &:last-child {
+      transform: translateX(10%);
+    }
+  }
+}
+.header {
+  @include respond(desktop) {
+    width: 50%;
+    text-align: start;
+  }
+}

@@ -1,0 +1,34 @@
+.heading-1 {
+  color: $color-primary;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.heading-3 {
+  color: $color-primary;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  display: inline-block;
+}
+.heading-4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  &--pink {
+    font-size: 1.2rem;
+    color: $color-secondary;
+  }
+  &--white {
+    font-weight: 500;
+    color: $color-white;
+  }
+}
+.paragraph {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  &--grey {
+    color: $color-grey-dark;
+  }
+}

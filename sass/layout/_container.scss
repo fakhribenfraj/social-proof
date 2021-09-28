@@ -1,0 +1,35 @@
+.app {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  background-image: linear-gradient(
+      rgba($color-grey-light, 0.2),
+      rgba($color-grey-light, 0.2)
+    ),
+    url("../images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  padding: 4rem 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  @include respond(desktop) {
+    padding: 6rem 4rem;
+  }
+}
+.preview {
+  margin: 0rem auto;
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  @include respond(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  @include respond(desktop) {
+    flex-direction: row;
+  }
+}

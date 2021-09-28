@@ -1,0 +1,165 @@
+.u-mb-s {
+  margin-bottom: 2rem; }
+
+.u-mb-xs {
+  margin-bottom: 1rem; }
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 56.25%; }
+  @media only screen and (min-width: 75em) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  box-sizing: border-box; }
+
+.heading-1 {
+  color: #502050;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem; }
+
+.heading-3 {
+  color: #502050;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  display: inline-block; }
+
+.heading-4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem; }
+  .heading-4--pink {
+    font-size: 1.2rem;
+    color: #ee68a4; }
+  .heading-4--white {
+    font-weight: 500;
+    color: white; }
+
+.paragraph {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  line-height: 2rem; }
+  .paragraph--grey {
+    color: #937b92; }
+
+@media only screen and (min-width: 75em) {
+  .rating-container {
+    width: 50%; } }
+
+.rate {
+  background-color: rgba(80, 32, 80, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 0;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .rate__stars {
+    margin: 0 auto;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: center; }
+  @media only screen and (min-width: 75em) {
+    .rate {
+      width: 70%;
+      flex-direction: row;
+      justify-content: center;
+      padding: 2rem 4rem; }
+      .rate:first-child {
+        transform: translateX(-10%); }
+      .rate:last-child {
+        transform: translateX(10%); } }
+
+@media only screen and (min-width: 75em) {
+  .header {
+    width: 50%;
+    text-align: start; } }
+
+.card {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 4rem;
+  background-color: #502050;
+  color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column; }
+  .card__text {
+    color: white;
+    font-size: 1.2rem; }
+  @media only screen and (min-width: 75em) {
+    .card {
+      margin: 2rem; }
+      .card:first-child {
+        transform: translateY(-10%); }
+      .card:last-child {
+        transform: translateY(10%); } }
+
+.user {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 2rem;
+  margin-bottom: 1.5rem; }
+  .user__icon {
+    grid-row: 1/-1;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%; }
+
+.app {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  background-image: linear-gradient(rgba(247, 242, 247, 0.2), rgba(247, 242, 247, 0.2)), url("../images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  padding: 4rem 2.5rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 75em) {
+    .app {
+      padding: 6rem 4rem; } }
+
+.preview {
+  margin: 0rem auto;
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 75em) {
+    .preview {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.story {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 75em) {
+    .story {
+      flex-direction: row; } }
